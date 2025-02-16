@@ -1,0 +1,115 @@
+body{
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(95, 207, 128);
+}
+#quote-box{
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    line-height: .6;
+}
+.quote{
+    font-size: 4.7rem;
+    font-weight: 500;
+    line-height: 1.1;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+    position: relative;
+    margin: 0;
+}
+.quote:before, .quote:after{
+    font-size: 6rem;
+    line-height: 2.5rem;
+    position: absolute;
+}
+.quote:before{
+    content: "“";
+    top: .25em;
+    left: -.5em;
+}
+.quote:after{
+    content: "”";
+    bottom: -.1em;
+    margin-left: .1em;
+    position: absolute;
+}
+.source{
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    text-align: right;
+    margin-right: 4em;
+}
+.source::before{
+    content: "—";
+}
+.citation{
+    font-size: 2.5rem;
+    font-size-adjust: italic;
+}
+.citation::before, .year::before{
+    content: ", ";
+    font-style: normal;
+}
+.period::before {
+    content: ", ";
+    font-style: none;
+}
+
+#loadQuote{
+    font-size: 2.5rem;
+    position: fixed;
+    width: 7em;
+    display: inline-block;
+    right: 20%;
+    margin-left: -6em;
+    bottom: 5rem;
+    border: 2px solid #fff;
+    border-radius: 5.5px;
+    color: #fff;
+    background-color: rgba(85, 61, 61, 0.3);
+    padding: 15px 0px;
+    transition: .7s;
+}
+#loadQuote:hover{
+    background-color: rgba(255, 255, 255, .25)
+}
+#loadQuote:focus{
+    outline: none;
+}
+
+@media (max-width: 420px) {
+    .quote {
+        font-size: 2.5rem;
+    }
+    .quote::before, .quote:after{
+        font-size: 3rem;
+    }
+    .source {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    #loadQuote {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    #loadQuote {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    #loadQuote {
+        max-width: 950px;
+    }
+}
+@media (min-width: 1200px) {
+    #loadQuote {
+        max-width: 1140px;
+    }
+}
