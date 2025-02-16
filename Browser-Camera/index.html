@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Camera Web App - Capture & Record Online</title>
+    <meta
+      name="description"
+      content="Capture photos and record videos directly from your browser using our Camera Web App. Apply filters and save your media easily!"
+    />
+    <meta
+      name="keywords"
+      content="camera app, online camera, capture photo, record video, webcam app"
+    />
+    <meta name="author" content="Masaud Ahmod" />
+
+    <!-- Open Graph (For social media preview) -->
+    <meta property="og:title" content="Camera Web App - Capture & Record" />
+    <meta
+      property="og:description"
+      content="Use your webcam to capture stunning photos and record videos with real-time filters."
+    />
+    <meta
+      property="og:image"
+      content="https://masaudahmod.com/camera-preview.jpg"
+    />
+    <meta property="og:url" content="https://masaudahmod.com/camera-app" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Camera Web App - Capture & Record Online"
+    />
+    <meta
+      name="twitter:description"
+      content="A simple and efficient online camera app for taking pictures and recording videos."
+    />
+    <meta
+      name="twitter:image"
+      content="https://masaudahmod.com/camera-preview.jpg"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" media="all"/>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Camera Web App",
+        "operatingSystem": "Web",
+        "applicationCategory": "Multimedia",
+        "author": {
+          "@type": "Person",
+          "name": "Masaud Ahmod"
+        },
+        "description": "A browser-based camera app for capturing images and recording videos with filters.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="video-container">
+      <video autoplay></video>
+    </div>
+    <div class="ui-filter filter-6"></div>
+
+    <div class="filter-container">
+      <div class="filter filter-1"></div>
+      <div class="filter filter-2"></div>
+      <div class="filter filter-3"></div>
+      <div class="filter filter-4"></div>
+      <div class="filter filter-5"></div>
+      <div class="filter filter-6"></div>
+    </div>
+
+    <div class="timing-container"><div class="timing">00:00:00</div></div>
+
+    <div class="zoom-container">
+      <i class="fas fa-plus icon"></i>
+      <i class="fas fa-minus icon"></i>
+    </div>
+
+    <div class="button-container">
+      <div class="record"><button id="record-video"></button></div>
+      <div class="click"><button id="click-image"></button></div>
+    </div>
+
+    <!-- <div class="gallery-container">
+        <a href="gallery.html" class="gallery"><i class="fab fa-envira"></i></a>
+    </div> -->
+
+    <script src="indexedDBScript.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
