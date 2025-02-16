@@ -50,10 +50,24 @@
         <button>Generate QR Code</button>
       </div>
       <div class="qr-code">
-        <img src="" alt="qr-code" />
+        <img src="" alt="generated qr code" loading="lazy" />
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "QR Code Generator",
+        "description": "A free QR Code Generator that allows users to create QR codes instantly using URLs or text.",
+        "applicationCategory": "WebApplication",
+        "author": {
+          "@type": "Person",
+          "name": "Masaud Ahmod"
+        },
+        "operatingSystem": "All"
+      }
+    </script>
   </body>
 </html>
