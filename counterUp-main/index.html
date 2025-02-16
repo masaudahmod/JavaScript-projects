@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <h1 class="counterUp" data-number="10" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="20" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="30" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="40" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="50" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="60" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="70" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="80" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="90" data-speed="100"></h1>
-    <h1 class="counterUp" data-number="100" data-speed="100"></h1>
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="An animated counter that counts up to a specific number. Perfect for stats, analytics, and achievements!"
+      />
+      <meta
+        name="keywords"
+        content="Counter Up, Animated Counter, JavaScript Counter, Number Animation"
+      />
+      <meta name="author" content="Masaud Ahmod" />
 
+      <meta property="og:title" content="JavaScript Counter Up Animation" />
+      <meta
+        property="og:description"
+        content="A dynamic counter animation that smoothly increments numbers for analytics and stats."
+      />
+      <meta
+        property="og:image"
+        content="https://yourwebsite.com/counter-thumbnail.jpg"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
 
-    <script src="js/custom.js"></script>
-</body>
+      <title>Animated Counter | JavaScript Counter Up</title>
+    </head>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        border-radius: 50%;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="counterUp" data-number="10" data-speed="100"></h1>
+      <h1 class="counterUp" data-number="20" data-speed="100"></h1>
+      <h1 class="counterUp" data-number="30" data-speed="100"></h1>
+      <h1 class="counterUp" data-number="40" data-speed="100"></h1>
+      <h1 class="counterUp" data-number="50" data-speed="100"></h1>
+      <h1 class="counterUp" data-number="60" data-speed="100"></h1>
+      <h1 class="counterUp" data-number="70" data-speed="100"></h1>
+      <h1 class="counterUp" data-number="80" data-speed="100"></h1>
+      <h1 class="counterUp" data-number="90" data-speed="100"></h1>
+      <h1
+        class="counterUp"
+        data-number="100"
+        data-speed="100"
+        aria-label="Animated Counter showing 100"
+      ></h1>
+    </div>
+
+    <script defer src="js/custom.js"></script>
+  </body>
 </html>
