@@ -65,9 +65,9 @@ We welcome contributions! Follow these simple steps:
 
 ## 📢 Stay Connected
 
-🌐 **GitHub Repo:** [Your Repository Link](https://github.com/masaudahmod/JavaScript-projects)  
+🌐 **GitHub Repo:** [Repository Link](https://github.com/masaudahmod/JavaScript-projects)  
 📧 **Email:** masaudahmod@gmail.com 
-🐦 **Twitter:** [@yourhandle](https://x.com/masaudahmod)
+🐦 **Twitter:** [@X](https://x.com/masaudahmod)
 
 ---
 
