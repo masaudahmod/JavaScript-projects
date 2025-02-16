@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Number Guessing Game - Play & Test Your Luck!</title>
+    <meta name="description" content="Enjoy the Number Guessing Game! Test your luck by guessing the correct number in this fun and interactive game.">
+    <meta name="keywords" content="Number Guessing Game, Play Online, Guess the Number, Fun Games, JavaScript Game">
+    <meta name="author" content="Masaud Ahmod">
+    
+    <!-- Open Graph (For social media preview) -->
+    <meta property="og:title" content="Number Guessing Game - Fun & Interactive">
+    <meta property="og:description" content="Try to guess the correct number in this interactive JavaScript game. Challenge yourself now!">
+    <!-- <meta property="og:image" content="https://yourwebsite.com/number-guessing-thumbnail.jpg"> -->
+    <!-- <meta property="og:url" content="https://yourwebsite.com/number-guessing-game"> -->
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Play the Number Guessing Game!">
+    <meta name="twitter:description" content="Challenge yourself with this exciting number guessing game.">
+    <meta name="twitter:image" content="https://www.x.com/masaudahmod">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+
+    <section id="numberGuessingGame">
+
+        <div class="main">
+
+            <h2>number guessing game</h2>
+            <button type="button" id="startGame"></button>
+
+            <button type="reset" id="resetGame">Start New Game</button>
+
+        </div>
+
+        <div id="playerOne" class="player_one">
+                <i class="fa-solid fa-xmark close" id="playerOneClose"></i>
+            <h3 class="playerName">Player One</h3>
+                <span id="playerOneError" class="error"></span>
+            <input type="number" id="playerOneInput" class="inputField" placeholder="Enter A Number">
+            <button type="submit" id="playerOneSubmit">Confirm</button>
+        </div>
+
+        <div class="player_two" >
+            <i class="fa-solid fa-xmark close" id="playerTwoClose"></i>
+
+            <div class="playerTwoHead">
+
+                <h2 class="playerName">Player Two</h2> 
+                <p class="chance">Chance: <span id="playerChance"></span></p>
+
+            </div>
+                <span id="playerTwoError" class="error"></span>
+            <input type="number" id="playerTwoInput" class="inputField" placeholder="Enter A Number">
+            <button type="button" id="playerTwoSubmit">Submit</button>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
