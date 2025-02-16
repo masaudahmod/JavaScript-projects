@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="A secure mobile banking app to manage transactions, send money, and recharge mobile balance easily."
+    />
+    <meta
+      name="keywords"
+      content="Mobile Banking, Online Transactions, Send Money, Mobile Recharge, Secure Banking"
+    />
+    <meta name="author" content="Masaud Ahmod" />
+
+    <!-- Open Graph for better sharing -->
+    <meta property="og:title" content="Mobile Banking Apps - Secure & Fast" />
+    <meta
+      property="og:description"
+      content="A simple and secure mobile banking app to send money and recharge your mobile balance."
+    />
+    <meta
+      property="og:image"
+      content="https://yourgithubusername.github.io/mobile-banking-apps/preview-image.png"
+    />
+    <meta
+      property="og:url"
+      content="https://yourgithubusername.github.io/mobile-banking-apps/"
+    />
+
+    <title>Mobile Banking Apps - Secure & Fast</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="main">
+      <div id="leftSide">
+        <div class="header">
+          <h1 class="title">Mobile Banking</h1>
+        </div>
+
+        <div id="feature">
+          <!-- balance start -->
+          <div class="balanceDiv">
+            <h2 class="balance">Total Balance</h2>
+            <p class="balanceNumber">$ <span id="totalBalance">500</span></p>
+          </div>
+          <!-- balance end -->
+          <!-- cash in start -->
+          <div class="cash_in">
+            <h2 class="cashintitle">Cash in</h2>
+            <input type="number" id="cashInInput" placeholder="Enter Amount" />
+            <p id="cashInError" style="height: 20px"></p>
+            <button type="button" id="cashInButton">Cash in</button>
+          </div>
+          <!-- cash in end -->
+          <!-- send money start -->
+          <div class="send_money">
+            <h2 class="sendmoneytitle">Send Money</h2>
+            <input
+              type="number"
+              id="sendMoneyInput"
+              placeholder="Enter Amount"
+            />
+            <p id="sendMoneyError" style="height: 20px"></p>
+            <button type="button" id="sendMoneyButton">Send in</button>
+          </div>
+          <!-- send money end -->
+          <!-- mobile recharge start -->
+          <div class="mobile_recharge">
+            <h2 class="mobilerechargetitle">Mobile Recharge</h2>
+            <button type="button" id="rechargeButton">Mobile Recharge</button>
+          </div>
+          <!-- mobile recharge end -->
+
+          <!-- add money start -->
+          <div class="add_money">
+            <h2 class="addmoneytitle">Add Money</h2>
+            <input
+              type="number"
+              id="addMoneyInput"
+              placeholder="Enter Amount"
+            />
+            <p id="addMoneyError" style="height: 20px"></p>
+            <button type="button" id="addMoneyButton">Add Money</button>
+          </div>
+          <!-- add money end -->
+
+          <!-- Gift start
+                <div class="_gift">
+                        
+                    <h2 class="giftTitle">Gift</h2>
+                    <input type="number" id="giftInput" placeholder="Enter Amount">
+                    <p id="giftError" style="height: 20px;"></p>
+                    <button type="button" id="giftButton">Gift</button>
+                    
+                </div>
+                Gift end -->
+        </div>
+
+        <!-- mobile recharge start -->
+
+        <div class="balance_show" id="myBalance">
+          <!-- my balance -->
+        </div>
+
+        <div class="recharge-div" id="mobileRechargeDiv">
+          <i class="fa-solid fa-xmark" id="mobileRechargeDivClose"></i>
+
+          <div class="operators">
+            <p id="mobileNumberError"></p>
+            <input
+              type="number"
+              id="mobileNumber"
+              placeholder="Enter Your Mobile Number"
+            />
+            <!-- button -->
+            <div class="btnDiv">
+              <button type="button" id="GrameenPhone">GrameenPhone</button>
+              <button type="button" id="banglaLink">Banglalink</button>
+              <button type="button" id="teleTalk">Teletalk</button>
+              <button type="button" id="roBi">Robi & Airtel</button>
+            </div>
+          </div>
+          <div class="rechargeMenu" id="rechargeMenuShow">
+            <p id="rechargeAmountError"></p>
+            <input
+              type="number"
+              id="rechargeAmount"
+              placeholder="Enter Recharge Amount"
+            />
+            <button type="button" id="rechargeAmountButton">Proceed</button>
+          </div>
+
+          <div class="passValid" id="passValidShow">
+            <span id="passwordIncorrect"></span>
+            <i class="fa-solid fa-xmark" id="passValidClose"></i>
+
+            <input
+              type="password"
+              id="accountPassword"
+              placeholder="Pleas Enter Your password"
+            />
+
+            <button type="button" id="rechargeConfirm">Tap here</button>
+          </div>
+        </div>
+
+        <!-- mobile recharge end -->
+      </div>
+      <div id="rightSide">
+        <div class="notification">
+          <h1 class="title">Transaction Records</h1>
+
+          <div class="transaction">
+            <div id="notificationCentre"></div>
+            <div id="transactionDelete"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

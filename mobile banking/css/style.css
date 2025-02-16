@@ -1,0 +1,304 @@
+/* common css start */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+body{
+    /* background-color: darkcyan; */
+    font-family: sans-serif;
+}
+
+/* common css end */
+
+#main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+#main #leftSide{
+    width: 65%;
+    background-color: #008b8b;
+    padding: 0 5px;
+    position: relative;
+}
+#leftSide .header {
+    margin: 100px 0 50px 20px;
+}
+#leftSide .header .title{
+    color: lightyellow;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+#feature{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#feature .balanceDiv .balanceNumber{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 30px;
+    color: black;
+}
+
+#feature div{
+    background-color: lightgreen;
+    width: 24%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#feature div input{
+    padding: 10px 5px;
+    margin: 15px 0 0;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    font-size: 15px;
+    background-color: lavender;
+}
+#feature div button{
+    margin: 15px 0 0;
+    width: 80%;
+    border: none;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: black;
+    background-color: tan;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+#feature div button:hover{
+    background-color: darkkhaki;
+}
+
+
+.balance_show{
+    position: absolute;
+    top: -50%;
+    left: 30%;
+    border-radius: 10px;
+    padding: 5px 20px;
+    height: 50px;
+    width: 400px;
+    background-color: yellow;
+    margin: 20px 0;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    transition: .3s;
+}
+
+#leftSide .recharge-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    margin:80px 5px ;
+    padding: 25px 0;
+    background-color: skyblue;
+    border-radius: 10px;
+    
+    transition: .4s;
+    transform: scale(0);
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+#leftSide .recharge-div .passValid{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .5s;
+}
+#leftSide .recharge-div .passValid button{
+    padding: 15px 0;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background-color: rgb(89, 120, 35);
+    cursor: pointer;
+    transition: .3s;
+}
+#leftSide .recharge-div .passValid button:hover{
+    background-color: rgb(60, 71, 41);
+
+}
+#leftSide .recharge-div .passValid input{
+    width: 50%;
+}
+#leftSide .recharge-div i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#leftSide .recharge-div input{
+    padding: 10px 5px;
+    margin: 15px 0 0;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    font-size: 15px;
+    width: 70%;
+    background-color: lavender;
+    margin-bottom: 20px;
+}
+#leftSide .recharge-div .btnDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#leftSide .recharge-div .operators{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#leftSide .recharge-div .btnDiv button{
+    padding: 15px 0;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: violet;
+    cursor: pointer;
+    transition: .3s;
+}
+#leftSide .recharge-div .btnDiv button:hover{
+    background-color: rgba(220, 188, 220, 0.868);
+}
+
+
+#leftSide .rechargeMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 50px;
+    width: 50%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .4s;
+}
+#leftSide .rechargeMenu button{
+    padding: 15px 0;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    transition: .3s;
+    font-weight: 600 ;
+}
+
+#leftSide .rechargeMenu button:hover{
+    background-color: rgb(35, 153, 102);
+}
+
+
+#passwordIncorrect{
+    position: absolute;
+    top: 10px;
+    height: 60px;
+    width: 40%;
+    border-radius: 10px;
+    color: rgb(242, 255, 0);
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 22px;
+    background-color: #008b8b;
+    padding-top: 13px;
+    transition: 0ms;
+    transform: scale(0);
+}
+
+
+/* notification centre start */
+#main #rightSide{
+    width: 35%;
+    padding-left: 45px;
+    background: rgb(0,139,139);
+    background: linear-gradient(90deg, rgba(0,139,139,1) 0%, rgba(106,130,135,1) 14%);
+}
+#main #rightSide .notification{
+    margin: 80px 0 2px 5px;
+}
+#main #rightSide .notification .title{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: greenyellow;
+}
+#notificationCentre p{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: rgb(184, 243, 64);
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+}
+#transactionDelete i{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.transaction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.transaction i{
+    color: red;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
