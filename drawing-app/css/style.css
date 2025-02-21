@@ -1,0 +1,17 @@
+canvas {
+    border: 1px solid black;
+    cursor: crosshair;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+     margin-bottom: 10px;
+}
+.controls {
+     margin-top: 10px;
+}
+
+button, input[type="range"] {
+    margin-left: 10px;
+}
