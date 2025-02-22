@@ -58,3 +58,7 @@ footer {
     text-align: center;
     background-color: #333;
 }
+span{
+    color: violet;
+    text-shadow: #fff 1px 0 5px;
+}
