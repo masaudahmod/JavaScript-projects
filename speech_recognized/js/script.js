@@ -1,37 +1,54 @@
 let element = document.getElementById("text");
+let startBtn = document.getElementById("start-btn");
+let copyBtn = document.getElementById("copy-btn");
 
 // SpeechRecognition সেটআপ
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
-recognition.lang = "en-GB"; // বাংলা চাইলে: "bn-BD"
+recognition.lang = "en-GB"; // চাইলে "bn-BD" ব্যবহার করতে পারো
 recognition.continuous = true;
-recognition.interimResults = true; // টেক্সট লাইভ আপডেট হবে
+recognition.interimResults = true; // লাইভ আপডেট
 
-let isListening = false; // ট্র্যাক করতে ক্লিক করলে স্টার্ট বা স্টপ হবে
+let isListening = false;
 
-document.onclick = () => {
+startBtn.onclick = () => {
     if (!isListening) {
         recognition.start();
         isListening = true;
+        startBtn.innerText = "🛑 Stop Talking";
         element.innerText = "🎤 Listening...";
     } else {
         recognition.stop();
         isListening = false;
-        element.innerText += " (Stopped)";
+        startBtn.innerText = "🎤 Start Talking";
     }
 };
 
-// স্পিচ রেজাল্ট শোনার জন্য
 recognition.onresult = (event) => {
     let transcript = "";
     for (let i = event.resultIndex; i < event.results.length; i++) {
         transcript += event.results[i][0].transcript + " ";
     }
-    element.innerText = transcript.trim(); // লাইভ টেক্সট আপডেট
+    element.innerText = transcript.trim();
 };
 
-// Error হ্যান্ডলিং
+// Copy Button Click
+copyBtn.onclick = () => {
+    if (element.innerText.trim() !== "") {
+        navigator.clipboard.writeText(element.innerText)
+            .then(() => {
+                alert("✅ Text Copied!");
+            })
+            .catch(err => {
+                console.error("Copy Failed: ", err);
+            });
+    } else {
+        alert("⚠️ No text to copy!");
+    }
+};
+
+// Error Handling
 recognition.onerror = (event) => {
     console.error("Speech recognition error:", event.error);
     element.innerText = "⚠️ Error: " + event.error;

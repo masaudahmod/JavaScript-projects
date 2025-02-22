@@ -40,3 +40,12 @@ h2 {
     font-size: 20px;
     color: #555;
 }
+
+/* Copy Button */
+#copy-btn {
+    background: #2196F3;
+}
+
+#copy-btn:hover {
+    background: #1976D2;
+}
