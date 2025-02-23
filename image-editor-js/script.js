@@ -1,3 +1,5 @@
+// This repository contains the source code for the image editor 
+
 // Get the source image to be edited
 let image = document.getElementById("sourceImage");
 
