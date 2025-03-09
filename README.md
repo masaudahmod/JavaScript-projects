@@ -4,6 +4,10 @@ Welcome to my open-source JavaScript project! 🚀 This project is packed with u
 
 ---
 
+## 📑License
+
+This is project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## 📌 Features
 
 ✅ **Completely Open-Source** – Feel free to explore, modify, and share!  
