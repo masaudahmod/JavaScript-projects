@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+#wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+form button {
+  background: none;
+  border: none;
+  color: #ff9800;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Weather Info */
+#current-weather {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+#weather_img {
+  width: 80px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#mainTemperature {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.side-weather-info h6 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* Temperature Switch */
+.temp-switch {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.temp-switch a {
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.temp-switch .active {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #wrapper {
+    padding: 15px;
+  }
+  #mainTemperature {
+    font-size: 2.5rem;
+  }
+  form input {
+    font-size: 14px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

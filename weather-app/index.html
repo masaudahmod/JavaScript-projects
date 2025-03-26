@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="It is a simple weather app built with Vanilla JavaScript. If you allow it can get your current location and give you the weather report. There is also a search option via city name. You can enter your favorite city name to find the weather report"
+    />
+    <meta
+      name="keywords"
+      content="javascript,weather,weather_app,vanilla_javascript,api,javascript_api"
+    />
+    <link rel="shortcut icon" href="favweather.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>weather_app</title>
+  </head>
+
+  <body>
+    <div class="container" id="wrapper">
+      <form action="" method="get">
+        <input
+          type="text"
+          id="query"
+          class="form-control"
+          placeholder="search by country or city name"
+        />
+        <button id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <div class="container-fluid" id="current-weather">
+        <div class="row justify-content-center align-items-center">
+          <!-- Right panel -->
+          <div class="col-md-4 col-sm-5">
+            <h5><spam id="cityName"></spam>,<spam id="cityCode"></spam></h5>
+            <h6 id="localDate"></h6>
+            <h5 id="localTime"></h5>
+          </div>
+
+          <!-- Center panel -->
+          <div class="col-md-5 col-sm-7" style="margin: 10px auto; padding: 0">
+            <div class="d-flex justify-content-between">
+              <img src="" alt="" style="width: 100px" id="weather_img" />
+              <div>
+                <spam id="mainTemperature"></spam>
+                <p id="tempDescription"></p>
+              </div>
+              <p style="font-size: 1.5rem">
+                <a href="#" class="active" id="celsius">°C</a> |
+                <a href="#" id="fahrenheit">°F</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Left panel -->
+          <div
+            class="col-xs-12 col-sm-12 col-md-3 row"
+            style="text-align: right"
+          >
+            <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+              <h6>Humidity: <spam id="humidity"></spam>%</h6>
+            </div>
+            <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+              <h6>Wind: <spam id="wind"></spam> m/h</h6>
+            </div>
+            <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+              <h6>Pressure: <spam id="pressure"></spam> Pa</h6>
+            </div>
+            <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+              <h6>Feels Like: <spam id="feelLike"></spam>°</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+"></script>
+    <script
+      src="https://kit.fontawesome.com/ec8600f611.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
