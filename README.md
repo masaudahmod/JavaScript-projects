@@ -80,4 +80,19 @@ If you find this project helpful, please consider giving it a ⭐ on GitHub!
 
 ---
 
+## 🌐 View the Project Live Locally
+
+You can view the project live on your local machine by opening the following file in your browser:
+
+🔗 **Local Demo:** [Open Project](./index.html)
+
+If you want to explore specific sections, you can also navigate to:
+
+- 🔹 **Background Video :** [Open Here](./bg-video/index.html)
+- 🔹 **Browser Camera :** [Open Here](./Browser-Camera/index.html)
+
+---
+
+---
+
 Thank you for being a part of this open-source journey! 🚀💙
